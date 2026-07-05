@@ -29,7 +29,7 @@ function SignUp() {
   return (
     <div className="flex items-center justify-center w-full py-4">
       <div
-        className="mx-auto w-full max-w-md rounded-2xl p-8 sm:p-10 border border-zinc-800 shadow-[0_8px_32px_rgba(0,0,0,0.6)] glow-red"
+        className="mx-auto w-full max-w-md rounded-2xl p-5 sm:p-10 border border-zinc-800 shadow-[0_8px_32px_rgba(0,0,0,0.6)] glow-red"
         style={{ backgroundColor: '#0e0e12' }}
       >
         <div className="mb-6 flex justify-center">

@@ -38,7 +38,7 @@ export default function Post() {
         <div className="py-10 text-left max-w-4xl mx-auto">
             <Container>
                 {/* Featured Image Container */}
-                <div className="w-full overflow-hidden rounded-2xl border border-zinc-900 bg-zinc-950 relative mb-8 shadow-2xl aspect-[21/9] sm:aspect-[21/10]">
+                <div className="w-full overflow-hidden rounded-2xl border border-zinc-900 bg-zinc-950 relative mb-8 shadow-2xl aspect-[16/10] sm:aspect-[21/9]">
                     {imageId && (
                         <img
                             src={appwriteService.getFilePreview(imageId)}
@@ -48,13 +48,13 @@ export default function Post() {
                     )}
 
                     {isAuthor && (
-                        <div className="absolute right-4 top-4 bg-black/60 backdrop-blur-md p-2 rounded-xl border border-zinc-800/80 flex gap-2">
+                        <div className="absolute right-2 top-2 sm:right-4 sm:top-4 bg-black/60 backdrop-blur-md p-1.5 sm:p-2 rounded-xl border border-zinc-800/80 flex gap-1.5 sm:gap-2">
                             <Link to={`/edit-post/${post.$id}`}>
-                                <Button bgColor="bg-green-500" className="px-4 py-1.5 text-xs">
+                                <Button bgColor="bg-green-500" className="px-3 sm:px-4 py-1 sm:py-1.5 text-xs font-semibold">
                                     Edit
                                 </Button>
                             </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost} className="px-4 py-1.5 text-xs">
+                            <Button bgColor="bg-red-500" onClick={deletePost} className="px-3 sm:px-4 py-1 sm:py-1.5 text-xs font-semibold">
                                 Delete
                             </Button>
                         </div>
